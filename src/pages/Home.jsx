@@ -1,4 +1,6 @@
 import React from 'react';
+import MyServices from '../components/MyServices';
+import Experience from '../components/Experiences';
 
 const Home = () => {
   return (
@@ -6,7 +8,7 @@ const Home = () => {
       {/* <!-- Hero Section --> */}
       <div className="hero-section container">
         <div className="d-flex justify-content-center">
-          <p style={{ border: '1px solid #FF6F3C', borderRadius: '20px' }} className="text-center px-3 py-1">Hello!</p>
+          <p style={{ border: '1px solid #956428', borderRadius: '20px' }} className="text-center px-3 py-1">Hello!</p>
         </div>
         <h1 className='name-heading'>
           I'm <span className="highlight">Vinay,</span>
@@ -23,7 +25,7 @@ const Home = () => {
             </div>
             <div className="stats mt-4">
               <div>
-                <h2>450+</h2>
+                <h2>10+</h2>
                 <p>Clients Served</p>
               </div>
             </div>
@@ -31,7 +33,7 @@ const Home = () => {
 
          {/* Hero Image in the middle */}
          <div className="col-md-4 hero-image ">
-            <img src="https://via.placeholder.com/350x350" alt="Vinay - Web Developer" className="hero-image" />
+            <img src={`taxi/download.png`} alt="Vinay - Web Developer" className="hero-image" />
           </div>
           
 
@@ -39,7 +41,7 @@ const Home = () => {
           <div className="col-md-4">
             <div className="stats mt-4">
               <div>
-                <h2>10 Years</h2>
+                <h2>1+ Years</h2>
                 <p>Experience</p>
               </div>
             </div>
@@ -51,6 +53,10 @@ const Home = () => {
           <button className="btn btn-secondary-custom">Hire Me</button>
         </div>
       </div>
+
+      {/* My Service Section */}
+      <MyServices/>
+      <Experience/>
     </>
   );
 };

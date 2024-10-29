@@ -4,8 +4,11 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
+      <div className='container'> 
+
+     
       <nav class="navbar navbar-expand-lg ">
-        <div class="container">
+       
             {/* <!-- Mobile/Tablet Logo on Left --> */}
             <a class="navbar-brand d-lg-none px-1 " href="#">Vinay Ramdas</a>
     
@@ -16,7 +19,7 @@ const Navbar = () => {
     
             <div class="collapse navbar-collapse" id="navbarNav">
                 {/* <!-- Left-side navigation links --> */}
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ps-4">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -44,8 +47,9 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        
     </nav>
+    </div>
     </>
   );
 };
