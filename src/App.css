@@ -1,38 +1,105 @@
-.App {
+@font-face {
+  font-family: "cy";
+  src: url(../public/fonts/cy-grotesk-grand-medium.ttf) format("truetype");
+  
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000;
+  margin: 15px 55px;
+  border-radius: 30px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+ /* Hero Section */
+ .hero-section {
+  background-color: #fff;
+  padding: 20px 0;
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.name-heading{
+  font-family: "cy";
+  font-size: 4rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.highlight {
+  color: #FF6F3C; /* Orange accent */
+}
+
+/* Image Styling */
+.hero-image img {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 10px solid #FF6F3C; /* Match with button color */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Tablet styles */
+  .navbar {
+      margin: 10px 20px;
+      border-radius: 30px;
+  }
+  
+  .navbar-brand {
+      font-size: 20px;
+  }
+
+  .navbar-nav .nav-link {
+      margin-right: 20px;
+      font-size: 18px;
+  }
+  .hero-section-mobile{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .name-heading{
+    font-family: "cy";
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 992px) {
+  /* Mobile styles */
+  .navbar {
+      margin: 10px;
+      border-radius: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar-brand {
+      font-size: 18px;
+  }
+
+  .navbar-nav .nav-link {
+      margin-right: 10px;
+      font-size: 16px;
   }
 }
